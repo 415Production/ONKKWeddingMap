@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>จุดจอดรถ งานแต่งงาน อโณทัย & เก่งกาจ</title>
+    <!-- นำเข้าฟอนต์ Prompt จาก Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -22,9 +23,10 @@
             max-width: 450px;
             padding: 40px 20px;
             width: 100%;
+            box-sizing: border-box;
         }
         .logo {
-            max-width: 200px; /* ปรับขนาดโลโก้ได้ตามความเหมาะสม */
+            max-width: 200px;
             height: auto;
             margin-bottom: 25px;
         }
@@ -32,7 +34,7 @@
             font-size: 1.6rem;
             font-weight: 600;
             margin-bottom: 5px;
-            color: #B58C5A; /* สีทองให้ล้อกับโลโก้ */
+            color: #B58C5A; /* สีทอง */
         }
         p.date {
             font-size: 1.1rem;
@@ -61,16 +63,25 @@
             font-weight: 400;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
         }
-        /* เอฟเฟกต์เมื่อกดปุ่ม หรือเอาเมาส์ชี้ */
         .btn:hover, .btn:active {
             background-color: #B58C5A;
             color: #ffffff;
             box-shadow: 0 4px 8px rgba(181, 140, 90, 0.2);
         }
+        /* CSS สำหรับส่วนหมายเหตุที่เพิ่มมาใหม่ */
+        .note {
+            font-size: 0.9rem;
+            color: #8C7A6B;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #EAE0D5; /* เส้นคั่นบางๆ */
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- อย่าลืมใช้ชื่อไฟล์โลโก้ให้ตรงกับที่อัปโหลด -->
         <img src="logo.png" alt="โลโก้งานแต่ง" class="logo">
         
         <h1>อโณทัย & เก่งกาจ</h1>
@@ -82,6 +93,12 @@
         <a href="https://maps.app.goo.gl/PYBBXFkVJ9stnt6x6" target="_blank" class="btn">2. จุดจอดรถข้างโรงแรมไดมอนด์</a>
         <a href="https://maps.app.goo.gl/DCUfw1jf4kDAGMTcA" target="_blank" class="btn">3. คุ้มท่ากูบ</a>
         <a href="https://maps.app.goo.gl/Ckuhad2qmHQU1NfA7" target="_blank" class="btn">4. จุดจอดรถซอยเยี่ยมวุฒิ</a>
+
+        <!-- ส่วนที่เพิ่มใหม่ -->
+        <p class="note">
+            <strong>หมายเหตุ:</strong> ท่านสามารถใช้พื้นที่จอดรถภายในเซ็นทรัลได้เช่นกัน<br>
+            (ขอสงวนสิทธิ์ให้ท่านที่มาถึงก่อน เนื่องจากพื้นที่มีจำนวนจำกัด)
+        </p>
     </div>
 </body>
 </html>
